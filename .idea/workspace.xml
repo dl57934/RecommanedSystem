@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f6413e-e280-4987-9563-558a957fbb81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Document.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Document.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Document.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/purifyRecommaned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/purifyRecommaned.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="purifyRecommaned.ipynb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="purifyRecommaned.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/purifyRecommaned.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="9" />
+              <selected id="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Document.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Document.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Document.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="25">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -68,8 +67,8 @@
       <list>
         <option value="$PROJECT_DIR$/purifyData.py" />
         <option value="$PROJECT_DIR$/eyeShadow.csv" />
-        <option value="$PROJECT_DIR$/purifyRecommaned.ipynb" />
         <option value="$PROJECT_DIR$/Document.txt" />
+        <option value="$PROJECT_DIR$/purifyRecommaned.ipynb" />
       </list>
     </option>
   </component>
@@ -202,16 +201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purifyRecommaned.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/purifyData.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/eyeShadow.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -219,10 +208,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/purifyData.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Document.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="25">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purifyRecommaned.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="16" />
         </state>
       </provider>
     </entry>

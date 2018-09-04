@@ -7,9 +7,13 @@
 
 변수 의미
 
-original_data: 원본데이터를 담고있는 변수
-id_purify: id 값을 정제한 데이터
-review_data: 화장품 id별 리뷰 들 모음
+1. original_data: 원본데이터를 담고있는 변수
+
+2. id_purify: id 값을 정제한 데이터
+
+3. review_data: 화장품 & id별 리뷰 들 모음 (비슷한 리뷰를 찾는데 쓸 변수)
+
+4. id_to_name: id로 화장품 이름 바로 찾기위해서 만듬
 
 함수
 
