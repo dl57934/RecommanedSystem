@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f6413e-e280-4987-9563-558a957fbb81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/makingModel.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purifyRecommaned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/purifyRecommaned.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purifyRecommaned.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="purifyData.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="purifyData.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/purifyData.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-125">
@@ -54,20 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="purifyRecommaned.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/purifyRecommaned.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="makingModel.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="makingModel.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="15" />
+              <selected id="21" />
             </state>
           </provider>
         </entry>
@@ -268,9 +257,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952926" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26676178" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26676178" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
@@ -493,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purifyData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Document.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-125">
@@ -531,7 +513,14 @@
     <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="15" />
+          <selected id="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purifyData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
