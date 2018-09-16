@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f6413e-e280-4987-9563-558a957fbb81" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/purifyRecommaned.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/makingModel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/makingModel.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="purifyData.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="purifyData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/purifyData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
+            <state relative-caret-position="-875">
               <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
             </state>
           </provider>
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makingModel.ipynb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="makingModel.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="21" />
+              <selected id="2" />
             </state>
           </provider>
         </entry>
@@ -257,7 +257,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952926" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32952926" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26676178" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26676178" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -496,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/konlpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/purifyRecommaned.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -510,17 +503,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="21" />
+    <entry file="file://$PROJECT_DIR$/purifyData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purifyData.py">
+    <entry file="file://$PROJECT_DIR$/konlpyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="250">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
         </state>
       </provider>
     </entry>
