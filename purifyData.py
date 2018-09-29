@@ -85,4 +85,4 @@ def making_predict_data(cosmetic_id, original_data):
     return predict_data.iloc[cosmetic_id]
 
 
-print(get_recommaned_cosmetic(0, type=3))
+print(get_recommaned_cosmetic(10, type=0))
