@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import linear_kernel
 from surprise import Reader, Dataset, SVD, evaluate
 from konlpy.tag import Twitter
 
-select_type = 0
+select_type = 4
 original_data = pd.read_csv('./eyeShadow.csv')
 type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
 original_data['type'] = original_data['type'].map(type)
@@ -21,7 +21,9 @@ for index, data in enumerate(original_data['review']):
     totalWord = ''
 
 id_purify_data = original_data.copy()
-member_per_type = {0: 1000, 1: 1000, 2: 1000, 3: 1000, 4: 1000}
+member_per_type = {0: len(original_data.loc[original_data['type']==0,:]), 1: len(original_data.loc[original_data['type']==1,:]), 2: len(original_data.loc[original_data['type']==2,:]),
+                   3: len(original_data.loc[original_data['type']==3,:]), 4: len(original_data.loc[original_data['type']==4,:])}
+
 for i in range(5):
     np.random.seed(42)
     id_purify_data.loc[id_purify_data["type"] == i, "userId"] = [np.random.randint(i * 200, 200 * (i + 1))
@@ -64,4 +66,4 @@ from sklearn.externals import joblib
 
 trainset = evaluate_data.build_full_trainset()
 svd.fit(trainset)
-joblib.dump(svd, 'eyeShadow_0.pkl')
+joblib.dump(svd, 'eyeShadow_4.pkl')
