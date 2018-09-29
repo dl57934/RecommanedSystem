@@ -19,7 +19,7 @@ def get_recommaned_cosmetic(userId, kind_cosmetic="eyeShadow", type=0, cosmetic=
     sim_scores = list(enumerate(cosine_sim[int(cosmetic_id)]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
     sim_scores = sim_scores[1:26]
-    svd = joblib.load('eyeShadow.pkl')
+    svd = joblib.load('eyeShadow_0.pkl')
     cosmetic_id = [i[0] for i in sim_scores]
     prediction = making_predict_data(cosmetic_id, original_data)
     prediction['est'] = prediction['popId'].apply(lambda x: svd.predict(userId, x).est)
@@ -85,4 +85,4 @@ def making_predict_data(cosmetic_id, original_data):
     return predict_data.iloc[cosmetic_id]
 
 
-print(get_recommaned_cosmetic(1))
+print(get_recommaned_cosmetic(0, type=3))
