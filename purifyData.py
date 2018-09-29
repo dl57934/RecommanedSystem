@@ -8,7 +8,7 @@ from konlpy.tag import Twitter
 
 
 def get_recommaned_cosmetic(userId, kind_cosmetic="eyeShadow", type=0, cosmetic="매트 아이 컬러"):
-    original_data = pd.read_csv('./eyeShadow.csv')
+    original_data = pd.read_csv('./foundation.csv')
     change_type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
     original_data['type'] = original_data['type'].map(change_type)
     id_purify_data = get_id_purify_data(original_data)

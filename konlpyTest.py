@@ -1,7 +1,5 @@
-from konlpy.tag import Twitter
-import pandas as pd
-
-csv = pd.read_csv('./eyeshadow.csv')
-type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
-csv['type'] = csv['type'].map(type)
-print(len(csv.loc[csv['type']==0,:]))
+from konlpy.tag import Komoran
+komoran = Komoran()
+print(komoran.morphs(u'우왕 코모란도 오픈소스가 되었어요'))
+print(komoran.nouns(u'오픈소스에 관심 많은 멋진 개발자님들!'))
+print(komoran.pos(u'한글형태소분석기 코모란 테스트 중 입니다.'))
