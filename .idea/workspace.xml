@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f6413e-e280-4987-9563-558a957fbb81" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/id2name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libTint.csv" beforeDir="false" afterPath="$PROJECT_DIR$/libTint.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makingModelverpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/makingModelverpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sunblock.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sunblock.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makingModel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/makingModel.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eyeshadow/eyeShadow_0.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/eyeShadow/eyeShadow_0.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eyeshadow/eyeShadow_1.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/eyeShadow/eyeShadow_1.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eyeshadow/eyeShadow_2.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/eyeShadow/eyeShadow_2.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eyeshadow/eyeShadow_3.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/eyeShadow/eyeShadow_3.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/eyeshadow/eyeShadow_4.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/eyeShadow/eyeShadow_4.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/purifyData.py" beforeDir="false" afterPath="$PROJECT_DIR$/purifyData.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,58 +24,83 @@
     <SUITE FILE_PATH="coverage/RecommanedSystem$konlpyTest.coverage" NAME="konlpyTest Coverage Results" MODIFIED="1538212250644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$makingModelverPY.coverage" NAME="makingModelverPY Coverage Results" MODIFIED="1538211672587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$RecommanedCosmetic.coverage" NAME="RecommanedCosmetic Coverage Results" MODIFIED="1537135619969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/RecommanedSystem$makingModelverpy.coverage" NAME="makingModelverpy Coverage Results" MODIFIED="1538219097049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RecommanedSystem$makingModelverpy.coverage" NAME="makingModelverpy Coverage Results" MODIFIED="1538219226452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedCosmetic$.coverage" NAME=" Coverage Results" MODIFIED="1536170770200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/RecommanedSystem$purifyData.coverage" NAME="purifyData Coverage Results" MODIFIED="1538173191075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RecommanedSystem$purifyData.coverage" NAME="purifyData Coverage Results" MODIFIED="1538418589646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedCosmetic$RecommanedCosmetic.coverage" NAME="RecommanedCosmetic Coverage Results" MODIFIED="1536714784287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/RecommanedCosmetic$konlpyTest.coverage" NAME="konlpyTest Coverage Results" MODIFIED="1536715620464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RecommanedSystem$id2name.coverage" NAME="id2name Coverage Results" MODIFIED="1538248076030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2120855301">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="8" />
-          <entry key="py" value="3" />
+          <entry key="csv" value="9" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="8" />
-          <entry key="Python" value="3" />
+          <entry key="CSV" value="9" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="20" />
           <entry key="dummy" value="2" />
-          <entry key="py" value="629" />
+          <entry key="py" value="1742" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="20" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="629" />
+          <entry key="Python" value="1742" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/purifyData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="342">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <marker date="1538418589611" expanded="true" signature="1593:2204" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eyeShadow.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="1887" column="17" selection-start-line="1887" selection-start-column="4" selection-end-line="1887" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/id2name.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -87,16 +118,16 @@
         <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="12" />
+              <selected id="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makingModelverpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="62" column="63" lean-forward="true" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
+            <state relative-caret-position="1368">
+              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -109,8 +140,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -118,6 +149,10 @@
     <findStrings>
       <find>\</find>
       <find>지금 2통</find>
+      <find>pkl</find>
+      <find>sort</find>
+      <find>룩 앳 마이 아이즈 카페</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,14 +164,15 @@
         <option value="$PROJECT_DIR$/eyeShadow.csv" />
         <option value="$PROJECT_DIR$/Document.txt" />
         <option value="$PROJECT_DIR$/purifyRecommaned.ipynb" />
-        <option value="$PROJECT_DIR$/makingModel.ipynb" />
         <option value="$PROJECT_DIR$/foundation.csv" />
         <option value="$PROJECT_DIR$/libTint.csv" />
         <option value="$PROJECT_DIR$/makingModelverPY.py" />
         <option value="$PROJECT_DIR$/konlpyTest.py" />
-        <option value="$PROJECT_DIR$/purifyData.py" />
         <option value="$PROJECT_DIR$/sunblock.csv" />
         <option value="$PROJECT_DIR$/makingModelverpy.py" />
+        <option value="$PROJECT_DIR$/id2name.py" />
+        <option value="$PROJECT_DIR$/purifyData.py" />
+        <option value="$PROJECT_DIR$/makingModel.ipynb" />
       </list>
     </option>
   </component>
@@ -146,10 +182,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-908" />
+    <option name="y" value="69" />
+    <option name="width" value="916" />
+    <option name="height" value="1576" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -162,11 +199,6 @@
             <path>
               <item name="RecommanedSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="RecommanedSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RecommanedSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RecommanedSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,6 +220,7 @@
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\eyeshadow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\sunblock" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\libTint" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\foundation" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\eyeshadow" />
@@ -205,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.makingModelverpy">
+  <component name="RunManager" selected="Python.purifyData">
     <configuration name="RecommanedCosmetic" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="RecommanedCosmetic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -222,6 +255,28 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="3000" />
+      <method v="2" />
+    </configuration>
+    <configuration name="id2name" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RecommanedCosmetic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/id2name.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="konlpyTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -318,13 +373,15 @@
       <item itemvalue="Python.konlpyTest" />
       <item itemvalue="Python.makingModelverPY" />
       <item itemvalue="Python.makingModelverpy" />
+      <item itemvalue="Python.id2name" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.purifyData" />
+        <item itemvalue="Python.id2name" />
         <item itemvalue="Python.makingModelverpy" />
         <item itemvalue="Python.konlpyTest" />
         <item itemvalue="Python.makingModelverPY" />
-        <item itemvalue="Python.purifyData" />
       </list>
     </recent_temporary>
   </component>
@@ -351,15 +408,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-908" y="69" width="916" height="1576" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22897196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41477272" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39764053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,24 +467,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Document.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/konlpyTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eyeShadow.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="12239" selection-start-line="12239" selection-end-line="12239" />
         </state>
       </provider>
     </entry>
@@ -445,16 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purifyData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunblock.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -462,19 +495,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Document.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyeShadow.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="1887" column="17" selection-start-line="1887" selection-start-column="4" selection-end-line="1887" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/id2name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/makingModel.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="12" />
+          <selected id="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makingModelverpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="62" column="63" lean-forward="true" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
+        <state relative-caret-position="1368">
+          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purifyData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1538418589611" expanded="true" signature="1593:2204" ph="..." />
           </folding>
         </state>
       </provider>
