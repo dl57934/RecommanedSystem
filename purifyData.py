@@ -8,8 +8,7 @@ from konlpy.tag import Twitter
 
 
 def get_recommaned_cosmetic(userId, kind_cosmetic="eyeShadow", type=0):
-    pd.set_option('display.expand_frame_repr', False)
-    original_data = pd.read_csv('./'+kind_cosmetic+'.csv')
+    original_data = pd.read_csv('RecommendSystem//data/'+kind_cosmetic+'.csv')
     change_type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
     original_data['type'] = original_data['type'].map(change_type)
     id_purify_data = get_id_purify_data(original_data)
@@ -23,7 +22,7 @@ def get_recommaned_cosmetic(userId, kind_cosmetic="eyeShadow", type=0):
     sim_scores = list(enumerate(cosine_sim[int(cosmetic_id)]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
     sim_scores = sim_scores[1:26]
-    svd = joblib.load('./model/'+kind_cosmetic+'/'+kind_cosmetic+'_'+str(type)+'.pkl')
+    svd = joblib.load('RecommendSystem/model/'+kind_cosmetic+'/'+kind_cosmetic+'_'+str(type)+'.pkl')
     cosmetic_id = [i[0] for i in sim_scores]
     prediction = making_predict_data(cosmetic_id, original_data)
     prediction['est'] = prediction['popId'].apply(lambda x: svd.predict(userId, x).est)
@@ -85,7 +84,6 @@ def name_2_id(original_data):
 def making_evaluate_data(id_purify_data, type=0):
     evaluate_data = id_purify_data[id_purify_data["type"] == type]
     evaluate_data = evaluate_data.drop(columns=['name', 'review', 'type'], axis=1)
-    print(evaluate_data)
     reader = Reader()
     evaluate_data = Dataset.load_from_df(evaluate_data, reader)
     return evaluate_data
@@ -105,4 +103,3 @@ def making_predict_data(cosmetic_id, original_data):
     return predict_data.iloc[cosmetic_id]
 
 
-print(get_recommaned_cosmetic(170, type=0))
