@@ -30,6 +30,21 @@ def get_recommaned_cosmetic(userId, kind_cosmetic, start,type=0):
     return prediction.iloc[start:start+10, :]
 
 
+# 아래와 같은 방식으로 반환해주세요.
+# kindCosmetic = {1: 'sunblock', 2: 'eyeShadow', 3: 'foundation', 4: 'libTint'}
+#     id = request.args.get('id')
+#     type = request.args.get('persontype')
+#     kindCosmeticNum = request.args.get('cosmetictype')
+#     startNum = request.args.get('start')
+#     recommend_cosmetic = get_recommaned_cosmetic(userId=int(id), start=startNum,
+#                                                  kind_cosmetic=kindCosmetic[int(kindCosmeticNum)], type=int(type))
+#     returnList = []
+#     for i, data in recommend_cosmetic.iterrows():
+#         data['est'] = round(data['est'], 2)
+#         returnList.append({'cosmeticname': data['name'], 'estimate': data['est']})
+#     return json.dumps(returnList)
+
+
 def get_best_cosmetic(original_data, type):
     data_per_type = original_data.loc[original_data["type"] == type, :]
     data_per_type = data_per_type.drop(['name', 'userId', 'review', 'type'], axis=1)
