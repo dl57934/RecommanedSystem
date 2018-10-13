@@ -55,6 +55,7 @@ tf = TfidfVectorizer(analyzer='word', min_df=2, stop_words=['\r', '\n'], subline
 tf_matrix = tf.fit_transform(review_data)
 cosine_sim = linear_kernel(tf_matrix, tf_matrix)
 print(6)
+
 def making_evaluate_data(type = 0):
     evaluate_data = id_purify_data[id_purify_data["type"]==type]
     evaluate_data = evaluate_data.drop(columns=['name', 'review', 'type'], axis=1)

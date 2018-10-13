@@ -6,7 +6,7 @@ from surprise import Reader, Dataset, SVD, evaluate
 from sklearn.externals import joblib
 
 
-def get_recommaned_cosmetic(userId, kind_cosmetic, start,type=0):
+def get_recommaned_cosmetic(userId, kind_cosmetic, start, type=0):
     pd.set_option('display.expand_frame_repr', False)
     original_data = pd.read_csv('./data/' + kind_cosmetic + '.csv')
     change_type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
@@ -27,22 +27,7 @@ def get_recommaned_cosmetic(userId, kind_cosmetic, start,type=0):
     prediction = making_predict_data(cosmetic_id, original_data)
     prediction['est'] = prediction['popId'].apply(lambda x: svd.predict(userId, x).est)
     prediction = prediction.sort_values('est', ascending=False)
-    return prediction.iloc[start:start+10, :]
-
-
-# 아래와 같은 방식으로 반환해주세요.
-# kindCosmetic = {1: 'sunblock', 2: 'eyeShadow', 3: 'foundation', 4: 'libTint'}
-#     id = request.args.get('id')
-#     type = request.args.get('persontype')
-#     kindCosmeticNum = request.args.get('cosmetictype')
-#     startNum = request.args.get('start')
-#     recommend_cosmetic = get_recommaned_cosmetic(userId=int(id), start=startNum,
-#                                                  kind_cosmetic=kindCosmetic[int(kindCosmeticNum)], type=int(type))
-#     returnList = []
-#     for i, data in recommend_cosmetic.iterrows():
-#         data['est'] = round(data['est'], 2)
-#         returnList.append({'cosmeticname': data['name'], 'estimate': data['est']})
-#     return json.dumps(returnList)
+    return prediction.iloc[start:start + 10, :]
 
 
 def get_best_cosmetic(original_data, type):
@@ -126,5 +111,16 @@ def making_predict_data(cosmetic_id, original_data):
     predict_data = predict_data.drop_duplicates()
     return predict_data.iloc[cosmetic_id]
 
-
-print(get_recommaned_cosmetic(50, 'libTint'))
+# 아래와 같은 방식으로 반환해주세요.
+# kindCosmetic = {1: 'sunblock', 2: 'eyeShadow', 3: 'foundation', 4: 'libTint'}
+#     id = request.args.get('id')
+#     type = request.args.get('persontype')
+#     kindCosmeticNum = request.args.get('cosmetictype')
+#     startNum = request.args.get('start')
+#     recommend_cosmetic = get_recommaned_cosmetic(userId=int(id), start=startNum,
+#                                                  kind_cosmetic=kindCosmetic[int(kindCosmeticNum)], type=int(type))
+#     returnList = []
+#     for i, data in recommend_cosmetic.iterrows():
+#         data['est'] = round(data['est'], 2)
+#         returnList.append({'cosmeticname': data['name'], 'estimate': data['est']})
+#     return json.dumps(returnList)
