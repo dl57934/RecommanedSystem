@@ -71,6 +71,7 @@ def making_data(id_purify_data):
                                                                      for j in range(0, member_per_type[i])]
     id_purify_data = id_purify_data.sort_values('userId')
     id_purify_data = id_purify_data.reset_index(drop=True)
+    id_purify_data.to_csv('./data/neweyeshadow.csv')
     return id_purify_data
 
 
@@ -133,4 +134,4 @@ def making_evaluate_data(id_purify_data, skin_type):
     return evaluate_data
 
 
-print(recommend_cosmetics(250, 'libTint', 0, 1))
+print(recommend_cosmetics(250, 'eyeShadow', 0, 1))
