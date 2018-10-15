@@ -117,4 +117,4 @@ def making_evaluate_data(id_purify_data, skin_type):
     return evaluate_data
 
 
-print(recommend_cosmetics(0, 'sunblock', 0, 0))
+print(recommend_cosmetics(0, 'libtint', 0, 0))
