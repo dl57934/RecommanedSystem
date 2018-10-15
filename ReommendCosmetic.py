@@ -11,7 +11,7 @@ def get_recommend_cosmetic(userId, kind_cosmetic, start, type=0):
     original_data = pd.read_csv('./data/' + kind_cosmetic + '.csv')
     change_type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
     original_data['type'] = original_data['type'].map(change_type)
-    id_purify_data = pd.read_csv('./data/newLibTint.csv')
+    id_purify_data = pd.read_csv('./data/newlibtint.csv')
     review_data = get_review_data(id_purify_data, type)
     name_to_id = name_2_id(original_data)
     id_to_name = id_2_name(original_data)
@@ -64,7 +64,7 @@ def get_id_purify_data(id_purify_data):
     id_purify_data = id_purify_data.sort_values('userId')
     id_purify_data = id_purify_data.reset_index(drop=True)
     print(id_purify_data[id_purify_data['type'] == 0])
-    id_purify_data.to_csv('./data/newLibTint.csv')
+    id_purify_data.to_csv('./data/newlibtint.csv')
     return id_purify_data
 
 
