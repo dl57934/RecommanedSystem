@@ -7,7 +7,7 @@ from konlpy.tag import Okt
 import time
 
 select_type = 4
-original_data = pd.read_csv('./sunblock.csv')
+original_data = pd.read_csv('./newsunblock.csv')
 type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
 original_data['type'] = original_data['type'].map(type)
 

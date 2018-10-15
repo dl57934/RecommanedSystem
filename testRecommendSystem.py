@@ -6,9 +6,10 @@ from surprise import Reader, Dataset, SVD, evaluate
 
 
 def recommend_cosmetics(user_id, kind_cosmetic, start, skin_type):
+    np.random.seed(42)
     pd.set_option('display.expand_frame_repr', False)
-    original_data = read_csv_data(kind_cosmetic)
-    id_purify_data = making_data(original_data)
+    id_purify_data = pd.read_csv('./data/new'+kind_cosmetic+'.csv')
+    id_purify_data = id_purify_data.drop('Unnamed: 0', axis=1)
     review_data = get_review_data(id_purify_data, skin_type)
     cosine_sim = review_to_vector(review_data)
     best_cosmetic_id = get_best_cosmetic(id_purify_data, skin_type)
@@ -54,26 +55,6 @@ def get_similarity_prediction_cosmetic(cosine_sim, best_cosmetic_id):
     return prediction_cosmetic_id
 
 
-def get_member_per_type(data, skin_type):
-    return len(data.loc[data['type'] == skin_type, :])
-
-
-def making_data(id_purify_data):
-    member_per_type = {
-        0: get_member_per_type(id_purify_data, 0),
-        1: get_member_per_type(id_purify_data, 1),
-        2: get_member_per_type(id_purify_data, 2),
-        3: get_member_per_type(id_purify_data, 3),
-        4: get_member_per_type(id_purify_data, 4)}
-    np.random.seed(42)
-    for i in range(5):
-        id_purify_data.loc[id_purify_data["type"] == i, "userId"] = [np.random.randint(i * 200, 200 * (i + 1))
-                                                                     for j in range(0, member_per_type[i])]
-    id_purify_data = id_purify_data.sort_values('popId')
-    id_purify_data = id_purify_data.reset_index(drop=True)
-    return id_purify_data
-
-
 def get_review_data(id_purify_data, type=0):
     review_data = ['' for i in range(100)]
     review_type_popid_data = pd.DataFrame(id_purify_data[["popId", "type", "review"]])
@@ -86,6 +67,7 @@ def get_review_data(id_purify_data, type=0):
 
 
 def id_2_name(original_data):
+    original_data = original_data.sort_values('popId')
     id_to_name = original_data[["popId", "name"]].drop_duplicates()
     id_to_name = id_to_name.reset_index(drop=True)
     id_to_name = id_to_name.drop(columns="popId", axis=1)
@@ -93,6 +75,7 @@ def id_2_name(original_data):
 
 
 def name_2_id(original_data):
+    original_data = original_data.sort_values('popId')
     name_to_id = original_data[["popId", "name"]].drop_duplicates()
     name_to_id = name_to_id.set_index("name", drop=True)
     return name_to_id
@@ -120,7 +103,6 @@ def get_best_cosmetic(original_data, type):
     result = np.nan_to_num(result, 0)
     id_to_name = id_2_name(original_data)
     name_to_id = name_2_id(original_data)
-    print(id_to_name)
     best_cosmetic = id_to_name.iloc[result.argmax()]['name']
     best_cosmetic_id = name_to_id.loc[best_cosmetic, :]
 
@@ -135,4 +117,4 @@ def making_evaluate_data(id_purify_data, skin_type):
     return evaluate_data
 
 
-print(recommend_cosmetics(20, 'sunblock', 0, 0))
+print(recommend_cosmetics(0, 'sunblock', 0, 0))

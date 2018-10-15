@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f6413e-e280-4987-9563-558a957fbb81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/testRecommendSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReommendCosmetic.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReommendCosmetic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/newLibTint.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/newlibtint.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/neweyeshadow.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/neweyeshadow.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/newfoundation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/newfoundation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/newfoundation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/newlibtint.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/newsunblock.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/newsunblock.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makingModelverpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/makingModelverpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testRecommendSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/testRecommendSystem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +22,7 @@
     <SUITE FILE_PATH="coverage/RecommanedSystem$RecommanedCosmetic.coverage" NAME="RecommanedCosmetic Coverage Results" MODIFIED="1537135619969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$ReommendCosmetic.coverage" NAME="ReommendCosmetic Coverage Results" MODIFIED="1539495192714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$purifyData.coverage" NAME="purifyData Coverage Results" MODIFIED="1539467200924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RecommanedSystem$testRecommendSystem.coverage" NAME="testRecommendSystem Coverage Results" MODIFIED="1539582876619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RecommanedSystem$testRecommendSystem.coverage" NAME="testRecommendSystem Coverage Results" MODIFIED="1539623758125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$konlpyTest.coverage" NAME="konlpyTest Coverage Results" MODIFIED="1538212250644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedSystem$newRecommend.coverage" NAME="newRecommend Coverage Results" MODIFIED="1539580236422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RecommanedCosmetic$.coverage" NAME=" Coverage Results" MODIFIED="1536170770200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -75,78 +75,54 @@
     <session id="1305885570">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3316" />
+          <entry key="CSV" value="7" />
+          <entry key="Python" value="4143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="5" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6" />
+          <entry key="CSV" value="17" />
+          <entry key="IPNB" value="4" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="12" />
+          <entry key="TSV" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="7" />
-          <entry key="py" value="6" />
+          <entry key="csv" value="19" />
+          <entry key="ipynb" value="4" />
+          <entry key="numbers" value="1" />
+          <entry key="py" value="12" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3316" />
+          <entry key="csv" value="7" />
+          <entry key="py" value="4143" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReommendCosmetic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newRecommend.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="118" column="45" selection-end-line="137" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1539579802445" expanded="true" signature="324:325" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="324:422" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="324:1588" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="1135:1160" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="1328:1389" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="1441:1446" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="1621:1626" ph="..." />
-                <marker date="1539579802445" expanded="true" signature="1919:2184" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testRecommendSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+            <state relative-caret-position="162">
+              <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -157,13 +133,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makingModelverpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/sunblock.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -186,6 +164,8 @@
       <find>print</find>
       <find>loc</find>
       <find>type</find>
+      <find>to</find>
+      <find>making</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,6 +189,7 @@
         <option value="$PROJECT_DIR$/makingModelverpy.py" />
         <option value="$PROJECT_DIR$/ReommendCosmetic.py" />
         <option value="$PROJECT_DIR$/newRecommend.py" />
+        <option value="$PROJECT_DIR$/data/newlibtint.csv" />
         <option value="$PROJECT_DIR$/testRecommendSystem.py" />
       </list>
     </option>
@@ -219,15 +200,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="838" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,7 +227,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,6 +238,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\sunblock" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\libTint" />
       <recent name="C:\Users\dl579\OneDrive\desktop\RecommanedSystem\model\foundation" />
@@ -449,22 +432,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="960" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17155068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.327551" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39693877" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43202764" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952926" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32949308" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.328125" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32952926" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49932885" weight="0.328125" />
@@ -514,10 +496,43 @@
     <entry file="file://$PROJECT_DIR$/sunblock.csv" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py" />
     <entry file="file://$PROJECT_DIR$/eyeShadow.csv" />
+    <entry file="file://$PROJECT_DIR$/purifyData.py" />
+    <entry file="file://$PROJECT_DIR$/writeTest.py" />
+    <entry file="file://$PROJECT_DIR$/id2name.py" />
+    <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="3117" selection-start-line="3117" selection-end-line="3117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/libTint.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/newfoundation.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReommendCosmetic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/foundation.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Document.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newRecommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -528,84 +543,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purifyData.py" />
-    <entry file="file://$PROJECT_DIR$/writeTest.py" />
     <entry file="file://$PROJECT_DIR$/data/sunblocktest.csv">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor">
         <state>
           <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/id2name.py" />
-    <entry file="file://$PROJECT_DIR$/data/newlibtint.csv">
+    <entry file="file://$PROJECT_DIR$/data/newsunblock.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/newlibtint.numbers">
       <provider editor-type-id="csv-text-editor" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/sunblock.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/data/newlibtint.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/pandas/core/indexes/base.py">
+    <entry file="file://$PROJECT_DIR$/data/neweyeshadow.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/eyeShadow.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="3117" selection-start-line="3117" selection-end-line="3117" />
+        <state relative-caret-position="155">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sunblock.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file:///anaconda3/envs/tensorflow/lib/python3.6/site-packages/surprise/evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makingModelverpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/neweyeshadow.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newRecommend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="118" column="45" selection-end-line="137" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1539579802445" expanded="true" signature="324:325" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="324:422" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="324:1588" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="1135:1160" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="1328:1389" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="1441:1446" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="1621:1626" ph="..." />
-            <marker date="1539579802445" expanded="true" signature="1919:2184" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReommendCosmetic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/libTint.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/newfoundation.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/newsunblock.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/testRecommendSystem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+        <state relative-caret-position="162">
+          <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
