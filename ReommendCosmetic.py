@@ -6,12 +6,12 @@ from surprise import Reader, Dataset, SVD, evaluate
 from sklearn.externals import joblib
 
 
-def get_recommaned_cosmetic(userId, kind_cosmetic, start, type=0):
+def get_recommend_cosmetic(userId, kind_cosmetic, start, type=0):
     pd.set_option('display.expand_frame_repr', False)
     original_data = pd.read_csv('./data/' + kind_cosmetic + '.csv')
     change_type = {'건성': 0, '지성': 1, '중성': 2, '복합성': 3, '민감성': 4}
     original_data['type'] = original_data['type'].map(change_type)
-    id_purify_data = get_id_purify_data(original_data)
+    id_purify_data = pd.read_csv('./data/newLibTint.csv')
     review_data = get_review_data(id_purify_data, type)
     name_to_id = name_2_id(original_data)
     id_to_name = id_2_name(original_data)
@@ -62,7 +62,9 @@ def get_id_purify_data(id_purify_data):
         id_purify_data.loc[id_purify_data["type"] == i, "userId"] = [np.random.randint(i * 200, 200 * (i + 1))
                                                                      for j in range(0, member_per_type[i])]
     id_purify_data = id_purify_data.sort_values('userId')
+    id_purify_data = id_purify_data.reset_index(drop=True)
     print(id_purify_data[id_purify_data['type'] == 0])
+    id_purify_data.to_csv('./data/newLibTint.csv')
     return id_purify_data
 
 
@@ -110,6 +112,9 @@ def making_predict_data(cosmetic_id, original_data):
     predict_data = original_data[['popId', 'name']]
     predict_data = predict_data.drop_duplicates()
     return predict_data.iloc[cosmetic_id]
+
+
+
 
 # 아래와 같은 방식으로 반환해주세요.
 # kindCosmetic = {1: 'sunblock', 2: 'eyeShadow', 3: 'foundation', 4: 'libTint'}
