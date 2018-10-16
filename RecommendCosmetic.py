@@ -8,7 +8,7 @@ from surprise import Reader, Dataset, SVD, evaluate
 def recommend_cosmetics(user_id, kind_cosmetic, start, skin_type):
     np.random.seed(42)
     pd.set_option('display.expand_frame_repr', False)
-    id_purify_data = pd.read_csv('./data/new'+kind_cosmetic+'.csv')
+    id_purify_data = pd.read_csv('./data/new' + kind_cosmetic + '.csv')
     id_purify_data = id_purify_data.drop('Unnamed: 0', axis=1)
     review_data = get_review_data(id_purify_data, skin_type)
     cosine_sim = review_to_vector(review_data)
@@ -101,12 +101,7 @@ def get_best_cosmetic(original_data, type):
     cosmetic_per_popId = np.array(cosmetic_per_popId)
     result = rating / cosmetic_per_popId
     result = np.nan_to_num(result, 0)
-    id_to_name = id_2_name(original_data)
-    name_to_id = name_2_id(original_data)
-    best_cosmetic = id_to_name.iloc[result.argmax()]['name']
-    best_cosmetic_id = name_to_id.loc[best_cosmetic, :]
-
-    return best_cosmetic_id
+    return result.argmax()
 
 
 def making_evaluate_data(id_purify_data, skin_type):
@@ -117,4 +112,16 @@ def making_evaluate_data(id_purify_data, skin_type):
     return evaluate_data
 
 
-print(recommend_cosmetics(0, 'libtint', 0, 0))
+def add_data_to_csv(id, kind_cosmetic, cosmetic_name, rate, skin_type, review=""):
+    pd.set_option('display.expand_frame_repr', False)
+    read_data = pd.read_csv('./data/new' + kind_cosmetic + '.csv')
+    name_to_id = name_2_id(read_data)
+    pop_id = name_to_id.loc[cosmetic_name, :]
+    data = [id, cosmetic_name, pop_id['popId'], rate, review, skin_type]
+    read_data = read_data.drop('Unnamed: 0', axis=1)
+    read_data.loc[len(read_data)] = data
+    print(read_data)
+    read_data.to_csv()
+
+
+add_data_to_csv(0, 'foundation', '퍼펙팅 쿠션 브라이트닝', 0.00, 0, "ㅁㄴㅇㅁㄴㅇ")
